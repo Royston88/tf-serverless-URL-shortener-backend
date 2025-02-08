@@ -1,15 +1,8 @@
-name: Terraform Deployment
+name: Terraform CI
 
 on:
-  push:
+  pull_request:
     branches: [ "main" ]
-  workflow_dispatch:
-    inputs:
-      confirm:
-        type: boolean
-        required: true
-        default: false
-        description: "Are you sure you want to deploy?"
 
 env:            
   AWS_REGION: ap-southeast-1  
