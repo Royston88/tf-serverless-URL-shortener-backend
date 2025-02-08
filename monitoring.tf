@@ -101,4 +101,3 @@ resource "aws_api_gateway_stage" "api_gateway_stage" {
     format          = "[$context.requestId] ($context.identity.sourceIp) \"$context.httpMethod $context.routeKey $context.protocol\" $context.status $context.responseLength $context.requestTime"
   }
 }
-
