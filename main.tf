@@ -4,11 +4,10 @@ locals {
      name_prefix = "royston88" # provide your name prefix
 }
 
-
 ## IAM Role
 
 resource "aws_iam_role" "role lambda create" {
-  name = "${local.name_prefix}-role-dynamodb"
+  name = "${local.name_prefix}-role-lambda-create"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
